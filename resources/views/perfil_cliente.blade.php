@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
+@extends('index')
+@section('contenido')
     <title>Client Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     @vite('resources/css/app.css')
@@ -18,5 +17,4 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+    @endsection
