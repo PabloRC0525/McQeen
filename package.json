@@ -2,7 +2,7 @@
   "name": "mcqeen",
   "version": "1.0.0",
   "description": "",
-  "main": "plantilla.js",
+  "main": "index.js",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
