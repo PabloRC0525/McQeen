@@ -3,6 +3,7 @@
   <head>
     <title>Client Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    @vite('resources/css/app.css')  
   </head>
   <body class="flex justify-center items-center h-screen">
     <div class="w-1/2">
