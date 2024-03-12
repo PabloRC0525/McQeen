@@ -2,10 +2,10 @@
 
 @section('contenido')
 <div class="flex items-center justify-center min-h-screen">
-  <div class="max-w-3xl bg-gray-100 p-8 rounded-lg shadow-md">
+  <div class="w-3/4 h-80 bg-gray-100 p-8 rounded-lg shadow-md">
     <div class="p-5 border-b-2">
       <div class="flex justify-between items-center">
-        <div class="w-5/12">
+        <div class="w-3/4">
           <div class="flex items-center p-4 bg-white border rounded-lg mt-1">
             <img src="https://via.placeholder.com/150" alt="Client profile picture" class="w-24 h-24 rounded-full">
             <div class="ml-6">
