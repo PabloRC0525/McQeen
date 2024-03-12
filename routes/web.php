@@ -14,9 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('login');
 });
+
 
 Route::get('/user', function () {
     return view('perfil_cliente');
+});
+
+Route::get('/cliente_solicitar', function () {
+    return view('cliente_solicitar');
+});
+
+Route::get('/cliente_tickets', function () {
+    return view('cliente_tickets');
+});
+
+Route::get('/cliente_mensaje', function () {
+    return view('cliente_mensaje');
+});
+
+Route::get('/editar', function () {
+    return view('editar');
 });

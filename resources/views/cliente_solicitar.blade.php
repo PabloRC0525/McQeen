@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Layout</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    @vite('resources/css/app.css')
-</head>
+@extends('index')
+@section('contenido')
 <body class="bg-gray-100">
     <div class="container mx-auto p-6">
         <div class="bg-white shadow-md p-6 rounded">
@@ -37,4 +30,4 @@
         </div>
     </div>
 </body>
-</html>
+@endsection

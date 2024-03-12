@@ -24,7 +24,7 @@
       </button>
       <script>
         function Tickets(){
-          window.location.href= 'cliente_solicitar'
+          window.location.href= 'cliente_tickets'
         }
       </script>
       
@@ -48,9 +48,10 @@
       </button>
       <script>
         function Mensajes() {
-        window.location.href = 'cliente_solicitar';
-      }
-      </script>
+            // Aquí redirige a la vista 'user'
+            window.location.href = 'cliente_mensaje';
+        }
+    </script>
 
       <!-- Perfil Usuario -->
       <button class="border-solid border-1 px-3" onclick="Perfil()">
@@ -60,7 +61,7 @@
       </button>
       <script>
         function Perfil() {
-            // Aquí redirige a la vista 'index'
+            // Aquí redirige a la vista 'user'
             window.location.href = 'user';
         }
     </script>
