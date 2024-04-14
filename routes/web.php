@@ -17,9 +17,35 @@ Route::get('/', function () {
     return view('login');
 });
 
+Route::match(['get', 'post'], '/', function () {
+    return view('login');
+});
+
 
 Route::get('/user', function () {
     return view('perfil_cliente');
+});
+
+Route::get('/admin', function () {
+    return view('perfil_admin');
+});
+Route::get('/ed_admin', function () {
+    return view('Edit_Adm');
+});
+
+Route::get('/Admin_Usuarios', function () {
+    return view('Admin_usuarios');
+});
+
+Route::get('/Editar_admn', function () {
+    return view('Admin_editUsuarios');
+});
+Route::get('/Admin_asignacion', function () {
+    return view('Admin_asignacion');
+});
+
+Route::get('/Admin_dep', function () {
+    return view('Admin_dep');
 });
 
 Route::get('/cliente_solicitar', function () {

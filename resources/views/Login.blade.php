@@ -52,13 +52,40 @@
 
             <div>
                 <button class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" 
-                onclick="Home()">
+                onclick="redireccionarSegunUsuario()">
                     Iniciar sesión
                 </button>
                 <script>
-                    function Home() {
-                        // Aquí redirige a la vista 'user'
-                        window.location.href = 'user';
+                    function redireccionarSegunUsuario() {
+                        var email = document.getElementById("email-address").value;
+                        var password = document.getElementById("password").value;
+                        var usuario;
+        
+                        // Aquí podrías implementar la lógica para autenticar al usuario y obtener su rol o tipo
+                        // En este ejemplo, se simula la autenticación y obtención del rol basado en el correo electrónico
+                        
+                        if (email === 'abril@example.com') {
+                            usuario = 'admin';
+                        } else if (email === 'juan@example.com') {
+                            usuario = 'auxiliar';
+                        } else if (email === 'pablo@example.com') {
+                            usuario = 'cliente';
+                        } else if (email === '') {
+                            return;
+                        }
+                         else {
+                            alert('Correo electrónico no válido');
+                            return;
+                        }
+        
+                        // Aquí se redirige según el tipo de usuario
+                        if (usuario === 'admin') {
+                            window.location.href = 'admin'; // Redirige a la vista de administrador
+                        } else if (usuario === 'auxiliar') {
+                            window.location.href = 'auxiliar'; // Redirige a la vista de auxiliar
+                        } else if (usuario === 'cliente') {
+                            window.location.href = 'user'; // Redirige a la vista de cliente
+                        }
                     }
                 </script>
             </div>
