@@ -82,7 +82,7 @@
                         if (usuario === 'admin') {
                             window.location.href = 'admin'; // Redirige a la vista de administrador
                         } else if (usuario === 'auxiliar') {
-                            window.location.href = 'auxiliar'; // Redirige a la vista de auxiliar
+                            window.location.href = 'aux'; // Redirige a la vista de auxiliar
                         } else if (usuario === 'cliente') {
                             window.location.href = 'user'; // Redirige a la vista de cliente
                         }

@@ -37,6 +37,10 @@ Route::get('/Admin_Usuarios', function () {
     return view('Admin_usuarios');
 });
 
+Route::get('/tickets_admn', function () {
+    return view('Admin_tickets');
+});
+
 Route::get('/Editar_admn', function () {
     return view('Admin_editUsuarios');
 });
@@ -62,4 +66,28 @@ Route::get('/cliente_mensaje', function () {
 
 Route::get('/editar', function () {
     return view('editar');
+});
+
+Route::get('/aux', function () {
+    return view('perfil_aux');
+});
+
+Route::get('/edit_aux', function () {
+    return view('Edit_aux');
+});
+
+Route::get('/msg_aux', function () {
+    return view('aux_mensaje');
+});
+
+Route::get('/ticket_aux', function () {
+    return view('aux_tickets');
+});
+
+Route::get('/aux_buscar', function () {
+    return view('aux_buscar');
+});
+
+Route::get('/reportes', function () {
+    return view('reportes');
 });
