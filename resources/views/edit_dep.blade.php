@@ -1,21 +1,18 @@
 @extends('nav_adm')
 
 @section('contenido')
-<h1 class="text-2xl font-bold text-center">Editar Usuario</h1>
+<h1 class="text-2xl font-bold text-center">Añadir Departamento</h1>
 <div class="flex justify-center items-center">
     <div class="h-96 w-3/4 bg-gray-200 border-solid border-2 border-gray-700 mx-2 rounded-md flex justify-between items-center">
         
   
         <div class="h-auto w-1/3 m-4 rounded-lg p-10 text-left">
             <div class="text-xl text-red-800">Nombre</div>
-            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="Abril Sánchez Hernández"/>
-            <br><br><div class="text-xl text-red-800">Departamento</div>
-            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="Contaduría"/>
-            <br><br><div class="text-xl text-red-800">Nº de quejas</div>
-            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="10"/>
-            <br><br><div class="text-xl text-red-800">Quejas activas</div>
-            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="Si"/>
-            
+            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="vegetta777"/>
+            <br><br><div class="text-xl text-red-800">Numero de empleados</div>
+            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="777"/>
+            <br><br><div class="text-xl text-red-800">Jefe de Departamento</div>
+            <input type="text" class="text-l pb-2 text-gray-600  border-gray-400 px-11 rounded-lg focus:border-black" value="777"/>
         </div>
         <div>
             
@@ -26,14 +23,16 @@
             </svg>
             
             <button class="bg-red-400 py-2 px-3 rounded-lg hover:bg-red-800 hover:text-white"onclick="Solicitud()">
-                Guardar Cambios
+                Guardar
             </button>
+            <script>
+                function Solicitud(){
+                  window.location.href= 'Admin_dep'
+                }
+              </script>
         </div>
     </div>
 </div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
     function Solicitud() {
@@ -41,13 +40,13 @@
         // Muestra SweetAlert cuando se completa la acción
         Swal.fire({
             icon: 'success',
-            title: 'Usuario Modificado',
-            text: 'El usuario se ha modificado correctamente.',
+            title: 'Departamento Modificado',
+            text: 'El departamento se ha modificado correctamente.',
             confirmButtonText: 'Ok'
         }).then((result) => {
             // Redirige a la página Admin_Usuarios después de hacer clic en OK
             if (result.isConfirmed) {
-                window.location.href = 'Admin_Usuarios';
+                window.location.href = 'Admin_dep';
             }
         });
     }

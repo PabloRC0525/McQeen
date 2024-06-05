@@ -24,7 +24,7 @@
         </div>
 
         <div class="w-full bg-gray-100 my-4 mr-4 rounded-lg border-solid border-2 border-gray-500">
-            <div class="bg-blue-400 p-2 rounded-md">
+            <div class="bg-green-400 p-2 rounded-md">
                 Jose Eduardo
             </div>
 

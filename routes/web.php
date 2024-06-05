@@ -91,3 +91,19 @@ Route::get('/aux_buscar', function () {
 Route::get('/reportes', function () {
     return view('reportes');
 });
+
+Route::get('/reportes_adm', function () {
+    return view('reportes_adm');
+});
+
+Route::get('/nuevo_usr', function () {
+    return view('nuevo');
+});
+
+Route::get('/nuevo_dep', function () {
+    return view('nuevo_dep');
+});
+
+Route::get('/edit_dep', function () {
+    return view('edit_dep');
+});

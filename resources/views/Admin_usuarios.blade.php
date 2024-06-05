@@ -22,6 +22,15 @@
             <div class="bg-gray-300 hover:bg-red-800 hover:text-white border-solid border-2 border-gray-500 my-2 p-1 rounded-md w-11/12">
                 Laura Silva
             </div>
+            <button onclick="Añadir()" class="bg-green-300 hover:bg-green-800 hover:text-white border-solid border-2 border-gray-500 my-2 p-1 rounded-md w-11/12">
+                + Añadir
+            </button>
+            <script>
+                function Añadir() {
+                    // Aquí redirige a la vista 'user'
+                    window.location.href = 'nuevo_usr';
+                }
+            </script>
         </div>
 
         <div class="w-full flex justify-between items-center bg-gray-100 my-4 mr-4 rounded-lg border-solid border-2 border-gray-500">
@@ -42,7 +51,7 @@
                 <button class="bg-yellow-300 py-2 px-3 rounded-lg hover:bg-yellow-500 hover:text-white mb-2 "onclick="Edit()">
                     Editar Usuario
                 </button>
-                <button class="bg-red-400 py-2 px-3 rounded-lg hover:bg-red-800 hover:text-white">
+                <button onclick="Eliminar()" class="bg-red-400 py-2 px-3 rounded-lg hover:bg-red-800 hover:text-white">
                     Eliminar Usuario
                 </button>
                 <script>
@@ -55,4 +64,24 @@
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function Eliminar() {
+        // Simula la solicitud de guardar (aquí puedes agregar lógica de guardado)
+        // Muestra SweetAlert cuando se completa la acción
+        Swal.fire({
+            icon: 'success',
+            title: 'Usuario Eliminado',
+            text: 'El usuario se ha eliminado correctamente.',
+            confirmButtonText: 'Ok'
+        }).then((result) => {
+            // Redirige a la página Admin_Usuarios después de hacer clic en OK
+            if (result.isConfirmed) {
+                window.location.href = 'Admin_Usuarios';
+            }
+        });
+    }
+</script>
 @endsection

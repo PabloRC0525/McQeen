@@ -23,12 +23,6 @@
         <button class="bg-red-300 py-3 px-4 rounded-lg mt-5 hover:bg-red-500 hover:text-gray-100"onclick="Guardar()">
           Guardar Cambios
         </button>
-        <script>
-            function Guardar() {
-                // Aquí redirige a la vista 'user'
-                window.location.href = 'admin';
-            }
-        </script>
 
       </div>
 
@@ -45,4 +39,22 @@
   </div>
 
   </editar>
+
+  <script>
+    function Guardar() {
+        // Simula la solicitud de guardar (aquí puedes agregar lógica de guardado)
+        // Muestra SweetAlert cuando se completa la acción
+        Swal.fire({
+            icon: 'success',
+            title: 'Perfil Modificado',
+            text: 'El perfil se ha modificado correctamente.',
+            confirmButtonText: 'Ok'
+        }).then((result) => {
+            // Redirige a la página Admin_Usuarios después de hacer clic en OK
+            if (result.isConfirmed) {
+                window.location.href = 'admin';
+            }
+        });
+    }
+</script>
 @endsection

@@ -51,6 +51,16 @@
                   <option value="Proceso" selected>Proceso</option>
                   <option value="Finalizado">Finalizado</option>
                 </select>
+
+                <button onclick="Mensajes()" class="m-2 w-1/6 h-10 bg-green-500 border-2 border-gray-600 rounded-md text-center ">
+                  Contactar
+                </button>
+                <script>
+                  function Mensajes() {
+                      // Aquí redirige a la vista 'user'
+                      window.location.href = 'msg_aux';
+                  }
+              </script>
             </ul>
           </div>
       </div>

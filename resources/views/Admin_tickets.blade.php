@@ -2,7 +2,7 @@
 @section('contenido')
 <tickets class="flex justify-center align-middle my-5">
 
-    <div class="h-96 w-3/4 bg-blue-100 border-solid border-2 border-gray-700 mx-2 rounded-md flex">
+    <div class="h-96 w-3/4 bg-red-200 border-solid border-2 border-gray-700 mx-2 rounded-md flex">
 
       <div class="w-1/6 rounded-lg p-2 ml-4">
 
@@ -20,7 +20,7 @@
       </div>
 
       <div class="w-full bg-gray-100 my-4 mr-4 rounded-lg border-solid border-2 border-gray-500">
-          <div class="bg-blue-400 p-2 rounded-md">
+          <div class="bg-red-400 p-2 rounded-md">
             Limpieza              
           </div>
 
@@ -45,7 +45,7 @@
 
               </ul>
               <br>
-              <button onclick="Asignar()" class="bg-green-600 hover:bg-green-700 p-3 rounded-xl">Asignar</button>
+              <button onclick="Asignar()" class="bg-yellow-300 hover:bg-yellow-500 p-3 rounded-xl">Asignar</button>
               <script>
                 function Asignar(){
                   window.location.href= 'Admin_asignacion'

@@ -6,16 +6,16 @@
 
         <div class="w-full bg-gray-100 my-4 mr-4 rounded-lg border-solid border-2 border-gray-500 flex-col">
             <div class="bg-green-500 p-2 rounded-md items-center">
-               <p class="mx-96"> Busqueda de ticket</p> 
+               <p class="text-center"> Busqueda de ticket</p> 
             </div>
 
 
             <div class="w-full h-8 px-2 rounded-md mt-3 flex">
                 <textarea class="m-2 p-2 text-gray-500 w-2/3 h-10 border-black border-2 rounded-lg resize-none">Ingresa el numero de tiket</textarea>
 
-                <div class="m-2 w-1/6 h-10 bg-green-500 border-2 border-gray-600 rounded-md text-center">
+                <button class="m-2 w-1/6 h-10 bg-green-500 border-2 border-gray-600 rounded-md text-center">
                     Buscar
-                </div>
+                </button>
 
                 <select class="m-2 w-1/6 h-10 bg-green-500 border-2 border-gray-600 rounded-md text-center" name="Filtrar">
                   <option value="Estatus">Estatus</option>
